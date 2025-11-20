@@ -298,6 +298,17 @@
       }
     ]
   },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "description": "Es sieht so aus, als wäre diese Konstruktion noch nicht gebaut. Die Seite, die Sie suchen, existiert nicht oder wurde verschoben.",
+    "backHome": "Zurück zur Startseite",
+    "contact": "Kontaktieren Sie uns",
+    "quickLinks": "Oder gehen Sie zu:",
+    "about": "Über Uns",
+    "projects": "Projekte",
+    "news": "Aktuelles",
+    "services": "Dienstleistungen"
+  },
   "footer": {
     "about": "Über Uns",
     "aboutText": "SteelFlow Systems - Professionelles Schweißen und Stahlbau seit Jahren auf dem Markt.",

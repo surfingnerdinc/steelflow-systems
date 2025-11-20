@@ -298,6 +298,17 @@
       }
     ]
   },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "Looks like this construction hasn't been built yet. The page you're looking for doesn't exist or has been moved.",
+    "backHome": "Back to Home",
+    "contact": "Contact Us",
+    "quickLinks": "Or go to:",
+    "about": "About Us",
+    "projects": "Projects",
+    "news": "News",
+    "services": "Services"
+  },
   "footer": {
     "about": "About Us",
     "aboutText": "SteelFlow Systems - Professional welding and steel construction for years on the market.",

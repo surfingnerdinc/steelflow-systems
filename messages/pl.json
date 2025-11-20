@@ -298,6 +298,17 @@
       }
     ]
   },
+  "notFound": {
+    "title": "Strona nie znaleziona",
+    "description": "Wygląda na to, że ta konstrukcja jeszcze nie powstała. Strona, której szukasz, nie istnieje lub została przeniesiona.",
+    "backHome": "Powrót do strony głównej",
+    "contact": "Skontaktuj się z nami",
+    "quickLinks": "Lub przejdź do:",
+    "about": "O Firmie",
+    "projects": "Realizacje",
+    "news": "Aktualności",
+    "services": "Usługi"
+  },
   "footer": {
     "about": "O Firmie",
     "aboutText": "SteelFlow Systems - Profesjonalne spawanie i konstrukcje stalowe od lat na rynku.",

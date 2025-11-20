@@ -24,6 +24,19 @@ export default function HomePage() {
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    // Scroll to hash anchor after page loads
+    if (!isLoading && window.location.hash) {
+      const hash = window.location.hash.substring(1); // Remove '#'
+      setTimeout(() => {
+        const element = document.getElementById(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100); // Small delay to ensure DOM is ready
+    }
+  }, [isLoading]);
+
   if (isLoading) {
     return <LoadingScreen />;
   }

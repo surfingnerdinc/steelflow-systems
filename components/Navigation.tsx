@@ -64,11 +64,11 @@ export default function Navigation() {
   };
 
   const navLinks = [
-    { href: '#home', label: t('home') },
-    { href: '#about', label: t('about') },
-    { href: '#services', label: t('services') },
-    { href: '#portfolio', label: t('portfolio') },
-    { href: '#contact', label: t('contact') },
+    { href: '/', label: t('home'), isExternal: false },
+    { href: '/#about', label: t('about'), isExternal: false },
+    { href: '/#services', label: t('services'), isExternal: false },
+    { href: '/#portfolio', label: t('portfolio'), isExternal: false },
+    { href: '/#contact', label: t('contact'), isExternal: false },
   ];
 
   const languages = [
@@ -88,6 +88,19 @@ export default function Navigation() {
     setIsLangDropdownOpen(false);
   };
 
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    // Check if we're on homepage and link is a hash anchor
+    if (pathname === '/' && href.startsWith('/#')) {
+      e.preventDefault();
+      const sectionId = href.replace('/#', '');
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+    // If not on homepage, let the link navigate normally (with page reload)
+  };
+
   return (
     <motion.nav
       initial={{ y: -100 }}
@@ -102,7 +115,7 @@ export default function Navigation() {
       <div className="container mx-auto px-8 sm:px-12 lg:px-16">
         <div className="flex items-center justify-between h-24">
           {/* Logo - Left - minimalist */}
-          <a href="/#home" className="flex items-center space-x-3 shrink-0 group">
+          <Link href="/" className="flex items-center space-x-3 shrink-0 group">
             <img 
               src="/images/steelflow-logo1.svg" 
               alt="SteelFlow Systems" 
@@ -118,19 +131,34 @@ export default function Navigation() {
                 <span className="text-teal-600">Steel</span>Flow
               </span>
             </div>
-          </a>
+          </Link>
 
           {/* Desktop Navigation - Center */}
           <div className="hidden md:flex items-center space-x-8 absolute left-1/2 -translate-x-1/2">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-gray-600 dark:text-gray-300 hover:text-teal-600 dark:hover:text-teal-500 transition-colors duration-200 font-medium whitespace-nowrap"
-              >
-                {link.label}
-              </a>
-            ))}
+            {navLinks.map((link) => {
+              // Use Link component for pages, <a> for hash anchors
+              if (link.href.startsWith('/#')) {
+                return (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    onClick={(e) => handleNavClick(e, link.href)}
+                    className="text-gray-600 dark:text-gray-300 hover:text-teal-600 dark:hover:text-teal-500 transition-colors duration-200 font-medium whitespace-nowrap"
+                  >
+                    {link.label}
+                  </a>
+                );
+              }
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="text-gray-600 dark:text-gray-300 hover:text-teal-600 dark:hover:text-teal-500 transition-colors duration-200 font-medium whitespace-nowrap"
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
           </div>
 
           {/* Theme Toggle & Language Switcher - Right - minimalist style */}
@@ -265,16 +293,33 @@ export default function Navigation() {
           >
             <div className="container mx-auto px-8 py-6 space-y-6">
               {/* Navigation Links */}
-              {navLinks.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="block text-gray-700 dark:text-gray-300 hover:text-teal-600 dark:hover:text-teal-500 transition-colors duration-200 py-2 text-lg font-medium"
-                >
-                  {link.label}
-                </a>
-              ))}
+              {navLinks.map((link) => {
+                if (link.href.startsWith('/#')) {
+                  return (
+                    <a
+                      key={link.href}
+                      href={link.href}
+                      onClick={(e) => {
+                        handleNavClick(e, link.href);
+                        setIsMobileMenuOpen(false);
+                      }}
+                      className="block text-gray-700 dark:text-gray-300 hover:text-teal-600 dark:hover:text-teal-500 transition-colors duration-200 py-2 text-lg font-medium"
+                    >
+                      {link.label}
+                    </a>
+                  );
+                }
+                return (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="block text-gray-700 dark:text-gray-300 hover:text-teal-600 dark:hover:text-teal-500 transition-colors duration-200 py-2 text-lg font-medium"
+                  >
+                    {link.label}
+                  </Link>
+                );
+              })}
               
               {/* Controls */}
               <div className="pt-6 border-t border-gray-200 dark:border-gray-800 space-y-4">
