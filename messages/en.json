@@ -1,0 +1,162 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "SteelFlow Systems",
+    "subtitle": "Professional Welding and Steel Structures",
+    "description": "Creating lasting solutions with passion and precision",
+    "cta": "Explore Our Services"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Experience and Quality",
+    "description": "SteelFlow Systems is a company specializing in comprehensive welding services and steel structures. We combine years of experience with modern technologies to deliver the highest quality solutions.",
+    "experience": "Years of Experience",
+    "projects": "Completed Projects",
+    "clients": "Satisfied Clients"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive Solutions",
+    "welding": {
+      "title": "Welding",
+      "description": "Professional welding services for all types of steel and non-ferrous metals"
+    },
+    "steel": {
+      "title": "Steel Structures",
+      "description": "Design and construction of custom steel structures"
+    },
+    "renovation": {
+      "title": "Renovations and Modernizations",
+      "description": "Comprehensive renovation of steel structures and industrial machinery"
+    },
+    "projects": {
+      "title": "Custom Projects",
+      "description": "Realization of unique projects according to client specifications"
+    }
+  },
+  "portfolio": {
+    "title": "Our Projects",
+    "subtitle": "Project Portfolio",
+    "viewAll": "View All Projects"
+  },
+  "news": {
+    "title": "News",
+    "subtitle": "Latest updates from our company",
+    "readMore": "Read more",
+    "viewAll": "More News",
+    "items": {
+      "0": {
+        "category": "Project",
+        "title": "Production hall construction completed",
+        "excerpt": "We successfully completed another large steel construction project for the automotive industry."
+      },
+      "1": {
+        "category": "Certificate",
+        "title": "New ISO 3834 welding certificates",
+        "excerpt": "Our company received additional certificates confirming the highest quality of welding services."
+      },
+      "2": {
+        "category": "Technology",
+        "title": "Investment in new welding equipment",
+        "excerpt": "Purchase of modern equipment will allow us to achieve even better quality and faster delivery."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Get In Touch",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "message": "Message",
+      "send": "Send Message"
+    }
+  },
+  "aktualnosci": {
+    "title": "News",
+    "subtitle": "Stay up to date with the latest events, projects and achievements of our company",
+    "readMore": "Read more",
+    "filters": {
+      "all": "All",
+      "project": "Projects",
+      "certificate": "Certificates",
+      "technology": "Technology"
+    },
+    "categories": {
+      "project": "Project",
+      "certificate": "Certificate",
+      "technology": "Technology"
+    },
+    "items": [
+      {
+        "title": "Production hall construction completed",
+        "excerpt": "We successfully completed another large steel construction project for the automotive industry."
+      },
+      {
+        "title": "New ISO 3834 welding certificates",
+        "excerpt": "Our company received additional certificates confirming the highest quality of welding services."
+      },
+      {
+        "title": "Investment in new welding equipment",
+        "excerpt": "Purchase of modern equipment will allow us to achieve even better quality and faster delivery."
+      },
+      {
+        "title": "Railway bridge project for PKP",
+        "excerpt": "We completed welding of steel bridge structure according to the most rigorous standards."
+      },
+      {
+        "title": "New laser welding technology",
+        "excerpt": "We introduced laser welding to our offer, ensuring the highest precision and quality."
+      },
+      {
+        "title": "EN 1090 certificate renewed",
+        "excerpt": "We successfully passed the audit and renewed our EN 1090 certificate for steel structures."
+      },
+      {
+        "title": "Warehouse hall construction in Warsaw",
+        "excerpt": "We started a large steel construction project for a logistics center."
+      },
+      {
+        "title": "Automated robots in production",
+        "excerpt": "We implemented welding robots that increase efficiency and process repeatability."
+      },
+      {
+        "title": "ISO 9001:2015 quality certificate",
+        "excerpt": "Our company once again confirmed compliance of quality management system with ISO 9001 standard."
+      }
+    ],
+    "noResults": "No news in selected category"
+  },
+  "realizacje": {
+    "title": "Projects",
+    "subtitle": "Discover our comprehensive projects in steel construction and welding",
+    "filters": {
+      "all": "All",
+      "steel": "Steel Construction",
+      "welding": "Welding",
+      "renovation": "Renovations"
+    },
+    "categories": {
+      "steel": "Steel Construction",
+      "welding": "Welding",
+      "renovation": "Renovations"
+    },
+    "noResults": "No projects in selected category"
+  },
+  "footer": {
+    "about": "About Us",
+    "aboutText": "SteelFlow Systems - Professional welding and steel construction for years on the market.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "rights": "All rights reserved"
+  }
+}

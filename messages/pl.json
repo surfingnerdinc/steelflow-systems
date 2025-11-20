@@ -1,0 +1,162 @@
+{
+  "navigation": {
+    "home": "Strona Główna",
+    "about": "O Nas",
+    "services": "Usługi",
+    "portfolio": "Realizacje",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "SteelFlow Systems",
+    "subtitle": "Profesjonalne spawanie i konstrukcje stalowe",
+    "description": "Tworzymy trwałe rozwiązania z pasją i precyzją",
+    "cta": "Poznaj Nasze Usługi"
+  },
+  "about": {
+    "title": "O Firmie",
+    "subtitle": "Doświadczenie i Jakość",
+    "description": "SteelFlow Systems to firma specjalizująca się w kompleksowych usługach spawalniczych i konstrukcjach stalowych. Łączymy wieloletnie doświadczenie z nowoczesnymi technologiami, aby dostarczać rozwiązania najwyższej jakości.",
+    "experience": "Lat Doświadczenia",
+    "projects": "Zrealizowanych Projektów",
+    "clients": "Zadowolonych Klientów"
+  },
+  "services": {
+    "title": "Nasze Usługi",
+    "subtitle": "Kompleksowe Rozwiązania",
+    "welding": {
+      "title": "Spawanie",
+      "description": "Profesjonalne usługi spawalnicze wszystkich rodzajów stali i metali nieżelaznych"
+    },
+    "steel": {
+      "title": "Konstrukcje Stalowe",
+      "description": "Projektowanie i wykonawstwo konstrukcji stalowych na zamówienie"
+    },
+    "renovation": {
+      "title": "Remonty i Modernizacje",
+      "description": "Kompleksowe remonty konstrukcji stalowych i maszyn przemysłowych"
+    },
+    "projects": {
+      "title": "Projekty Indywidualne",
+      "description": "Realizacja nietypowych projektów według specyfikacji klienta"
+    }
+  },
+  "portfolio": {
+    "title": "Nasze Realizacje",
+    "subtitle": "Portfolio Projektów",
+    "viewAll": "Zobacz Wszystkie Realizacje"
+  },
+  "news": {
+    "title": "Aktualności",
+    "subtitle": "Najnowsze informacje z naszej firmy",
+    "readMore": "Czytaj więcej",
+    "viewAll": "Więcej Aktualności",
+    "items": {
+      "0": {
+        "category": "Projekt",
+        "title": "Zakończenie budowy hali produkcyjnej",
+        "excerpt": "Z sukcesem zrealizowaliśmy kolejny duży projekt konstrukcji stalowej dla przemysłu automotive."
+      },
+      "1": {
+        "category": "Certyfikat",
+        "title": "Nowe certyfikaty spawalnicze ISO 3834",
+        "excerpt": "Nasza firma otrzymała kolejne certyfikaty potwierdzające najwyższą jakość usług spawalniczych."
+      },
+      "2": {
+        "category": "Technologia",
+        "title": "Inwestycja w nowy sprzęt spawalniczy",
+        "excerpt": "Zakup nowoczesnych urządzeń pozwoli nam na jeszcze lepszą jakość i szybszą realizację."
+      }
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Skontaktuj Się z Nami",
+    "address": "Adres",
+    "phone": "Telefon",
+    "email": "Email",
+    "form": {
+      "name": "Imię i Nazwisko",
+      "email": "Adres Email",
+      "message": "Wiadomość",
+      "send": "Wyślij Wiadomość"
+    }
+  },
+  "aktualnosci": {
+    "title": "Aktualności",
+    "subtitle": "Bądź na bieżąco z najnowszymi wydarzeniami, projektami i osiągnięciami naszej firmy",
+    "readMore": "Czytaj więcej",
+    "filters": {
+      "all": "Wszystkie",
+      "project": "Projekty",
+      "certificate": "Certyfikaty",
+      "technology": "Technologia"
+    },
+    "categories": {
+      "project": "Projekt",
+      "certificate": "Certyfikat",
+      "technology": "Technologia"
+    },
+    "items": [
+      {
+        "title": "Zakończenie budowy hali produkcyjnej",
+        "excerpt": "Z sukcesem zrealizowaliśmy kolejny duży projekt konstrukcji stalowej dla przemysłu automotive."
+      },
+      {
+        "title": "Nowe certyfikaty spawalnicze ISO 3834",
+        "excerpt": "Nasza firma otrzymała kolejne certyfikaty potwierdzające najwyższą jakość usług spawalniczych."
+      },
+      {
+        "title": "Inwestycja w nowy sprzęt spawalniczy",
+        "excerpt": "Zakup nowoczesnych urządzeń pozwoli nam na jeszcze lepszą jakość i szybszą realizację."
+      },
+      {
+        "title": "Realizacja mostu dla PKP",
+        "excerpt": "Ukończyliśmy spawanie konstrukcji stalowej mostu kolejowego według najbardziej rygorystycznych norm."
+      },
+      {
+        "title": "Nowa technologia spawania laserowego",
+        "excerpt": "Wprowadziliśmy do oferty spawanie laserowe, które zapewnia najwyższą precyzję i jakość."
+      },
+      {
+        "title": "Certyfikat EN 1090 odnowiony",
+        "excerpt": "Pomyślnie przeszliśmy audyt i odnowiliśmy certyfikat EN 1090 dla konstrukcji stalowych."
+      },
+      {
+        "title": "Budowa hali magazynowej w Warszawie",
+        "excerpt": "Rozpoczęliśmy realizację dużego projektu konstrukcji stalowej dla centrum logistycznego."
+      },
+      {
+        "title": "Roboty zautomatyzowane w produkcji",
+        "excerpt": "Wdrożyliśmy roboty spawalnicze, które zwiększają wydajność i powtarzalność procesów."
+      },
+      {
+        "title": "Certyfikat jakości ISO 9001:2015",
+        "excerpt": "Nasza firma po raz kolejny potwierdziła zgodność systemu zarządzania jakością z normą ISO 9001."
+      }
+    ],
+    "noResults": "Brak aktualności w wybranej kategorii"
+  },
+  "realizacje": {
+    "title": "Realizacje",
+    "subtitle": "Odkryj nasze kompleksowe projekty w dziedzinie konstrukcji stalowych i spawalnictwa",
+    "filters": {
+      "all": "Wszystkie",
+      "steel": "Konstrukcje stalowe",
+      "welding": "Spawanie",
+      "renovation": "Modernizacje"
+    },
+    "categories": {
+      "steel": "Konstrukcje stalowe",
+      "welding": "Spawanie",
+      "renovation": "Modernizacje"
+    },
+    "noResults": "Brak projektów w wybranej kategorii"
+  },
+  "footer": {
+    "about": "O Firmie",
+    "aboutText": "SteelFlow Systems - Profesjonalne spawanie i konstrukcje stalowe od lat na rynku.",
+    "quickLinks": "Szybkie Linki",
+    "contact": "Kontakt",
+    "rights": "Wszelkie prawa zastrzeżone"
+  }
+}

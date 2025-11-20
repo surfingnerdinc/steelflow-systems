@@ -1,0 +1,162 @@
+{
+  "navigation": {
+    "home": "Startseite",
+    "about": "Über Uns",
+    "services": "Dienstleistungen",
+    "portfolio": "Portfolio",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "SteelFlow Systems",
+    "subtitle": "Professionelles Schweißen und Stahlkonstruktionen",
+    "description": "Wir schaffen dauerhafte Lösungen mit Leidenschaft und Präzision",
+    "cta": "Unsere Dienstleistungen"
+  },
+  "about": {
+    "title": "Über Uns",
+    "subtitle": "Erfahrung und Qualität",
+    "description": "SteelFlow Systems ist ein Unternehmen, das sich auf umfassende Schweißdienstleistungen und Stahlkonstruktionen spezialisiert hat. Wir verbinden langjährige Erfahrung mit modernen Technologien, um Lösungen höchster Qualität zu liefern.",
+    "experience": "Jahre Erfahrung",
+    "projects": "Abgeschlossene Projekte",
+    "clients": "Zufriedene Kunden"
+  },
+  "services": {
+    "title": "Unsere Dienstleistungen",
+    "subtitle": "Umfassende Lösungen",
+    "welding": {
+      "title": "Schweißen",
+      "description": "Professionelle Schweißdienstleistungen für alle Arten von Stahl und Nichteisenmetallen"
+    },
+    "steel": {
+      "title": "Stahlkonstruktionen",
+      "description": "Entwurf und Bau von maßgeschneiderten Stahlkonstruktionen"
+    },
+    "renovation": {
+      "title": "Renovierungen und Modernisierungen",
+      "description": "Umfassende Renovierung von Stahlkonstruktionen und Industriemaschinen"
+    },
+    "projects": {
+      "title": "Individuelle Projekte",
+      "description": "Realisierung einzigartiger Projekte nach Kundenspezifikationen"
+    }
+  },
+  "portfolio": {
+    "title": "Unsere Projekte",
+    "subtitle": "Projekt Portfolio",
+    "viewAll": "Alle Projekte Ansehen"
+  },
+  "news": {
+    "title": "Aktuelles",
+    "subtitle": "Neueste Informationen aus unserem Unternehmen",
+    "readMore": "Mehr lesen",
+    "viewAll": "Weitere Nachrichten",
+    "items": {
+      "0": {
+        "category": "Projekt",
+        "title": "Fertigstellung der Produktionshalle",
+        "excerpt": "Wir haben erfolgreich ein weiteres großes Stahlbauprojekt für die Automobilindustrie realisiert."
+      },
+      "1": {
+        "category": "Zertifikat",
+        "title": "Neue Schweißzertifikate ISO 3834",
+        "excerpt": "Unser Unternehmen erhielt weitere Zertifikate, die die höchste Qualität der Schweißdienstleistungen bestätigen."
+      },
+      "2": {
+        "category": "Technologie",
+        "title": "Investition in neue Schweißausrüstung",
+        "excerpt": "Der Kauf moderner Geräte ermöglicht uns eine noch bessere Qualität und schnellere Umsetzung."
+      }
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Kontaktieren Sie Uns",
+    "address": "Adresse",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "form": {
+      "name": "Vollständiger Name",
+      "email": "E-Mail Adresse",
+      "message": "Nachricht",
+      "send": "Nachricht Senden"
+    }
+  },
+  "aktualnosci": {
+    "title": "Aktuelles",
+    "subtitle": "Bleiben Sie auf dem Laufenden über die neuesten Ereignisse, Projekte und Erfolge unseres Unternehmens",
+    "readMore": "Mehr lesen",
+    "filters": {
+      "all": "Alle",
+      "project": "Projekte",
+      "certificate": "Zertifikate",
+      "technology": "Technologie"
+    },
+    "categories": {
+      "project": "Projekt",
+      "certificate": "Zertifikat",
+      "technology": "Technologie"
+    },
+    "items": [
+      {
+        "title": "Fertigstellung der Produktionshalle",
+        "excerpt": "Wir haben erfolgreich ein weiteres großes Stahlbauprojekt für die Automobilindustrie realisiert."
+      },
+      {
+        "title": "Neue Schweißzertifikate ISO 3834",
+        "excerpt": "Unser Unternehmen erhielt weitere Zertifikate, die die höchste Qualität der Schweißdienstleistungen bestätigen."
+      },
+      {
+        "title": "Investition in neue Schweißausrüstung",
+        "excerpt": "Der Kauf moderner Geräte ermöglicht uns eine noch bessere Qualität und schnellere Umsetzung."
+      },
+      {
+        "title": "Eisenbahnbrückenprojekt für PKP",
+        "excerpt": "Wir haben das Schweißen der Stahlbrückenkonstruktion nach den strengsten Normen abgeschlossen."
+      },
+      {
+        "title": "Neue Laserschweißtechnologie",
+        "excerpt": "Wir haben Laserschweißen in unser Angebot aufgenommen, das höchste Präzision und Qualität gewährleistet."
+      },
+      {
+        "title": "EN 1090 Zertifikat erneuert",
+        "excerpt": "Wir haben das Audit erfolgreich bestanden und unser EN 1090 Zertifikat für Stahlkonstruktionen erneuert."
+      },
+      {
+        "title": "Bau einer Lagerhalle in Warschau",
+        "excerpt": "Wir haben mit einem großen Stahlbauprojekt für ein Logistikzentrum begonnen."
+      },
+      {
+        "title": "Automatisierte Roboter in der Produktion",
+        "excerpt": "Wir haben Schweißroboter implementiert, die Effizienz und Prozesswiederholbarkeit erhöhen."
+      },
+      {
+        "title": "Qualitätszertifikat ISO 9001:2015",
+        "excerpt": "Unser Unternehmen hat erneut die Konformität des Qualitätsmanagementsystems mit ISO 9001 bestätigt."
+      }
+    ],
+    "noResults": "Keine Nachrichten in der ausgewählten Kategorie"
+  },
+  "realizacje": {
+    "title": "Projekte",
+    "subtitle": "Entdecken Sie unsere umfassenden Projekte im Bereich Stahlbau und Schweißen",
+    "filters": {
+      "all": "Alle",
+      "steel": "Stahlkonstruktionen",
+      "welding": "Schweißen",
+      "renovation": "Modernisierungen"
+    },
+    "categories": {
+      "steel": "Stahlkonstruktionen",
+      "welding": "Schweißen",
+      "renovation": "Modernisierungen"
+    },
+    "noResults": "Keine Projekte in der ausgewählten Kategorie"
+  },
+  "footer": {
+    "about": "Über Uns",
+    "aboutText": "SteelFlow Systems - Professionelles Schweißen und Stahlbau seit Jahren auf dem Markt.",
+    "quickLinks": "Schnelllinks",
+    "contact": "Kontakt",
+    "rights": "Alle Rechte vorbehalten"
+  }
+}
