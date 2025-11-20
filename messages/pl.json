@@ -150,7 +150,153 @@
       "welding": "Spawanie",
       "renovation": "Modernizacje"
     },
-    "noResults": "Brak projektów w wybranej kategorii"
+    "noResults": "Brak projektów w wybranej kategorii",
+    "projects": [
+      {
+        "title": "Konstrukcja stalowa hali przemysłowej",
+        "description": "Kompleksowa realizacja konstrukcji stalowej dla zakładu produkcyjnego o powierzchni 5000m²",
+        "challenge": "Klient potrzebował budynku o powierzchni 5000m² z dużymi rozpiętościami bezsłupowymi dla swobodnej organizacji przestrzeni produkcyjnej. Wymagana była szybka realizacja i minimalne koszty utrzymania.",
+        "solution": "Zaprojektowaliśmy i wykonaliśmy konstrukcję stalową z dźwigarami kratowymi o rozpiętości 30m. Wykorzystaliśmy wysokogatunkową stal S355, co pozwoliło na optymalizację przekrojów. Projekt zrealizowano w 4 miesiące.",
+        "results": ["Rozpiętość 30m bez słupów wewnętrznych", "Oszczędność 15% w stosunku do pierwotnego budżetu", "Realizacja w terminie 4 miesięcy", "Certyfikat EN 1090"]
+      },
+      {
+        "title": "Spawanie konstrukcji mostowej",
+        "description": "Spawanie elementów mostu drogowego z certyfikowanymi procedurami spawalniczymi",
+        "challenge": "Most kolejowy wymagał spawania konstrukcji zgodnie z najsurowszymi normami kolejowymi. Każdy szew spawalniczy musiał być w pełni udokumentowany i sprawdzony metodami nieniszczącymi.",
+        "solution": "Zastosowaliśmy certyfikowane procedury spawalnicze WPS zgodne z EN ISO 15614. Spawanie wykonywaliśmy metodami MAG i SAW. Wszystkie spoiny przeszły badania ultradźwiękowe i radiograficzne.",
+        "results": ["100% spawów zaakceptowanych", "Certyfikacja zgodnie z normami kolejowymi", "Zerowa liczba wad krytycznych", "Pełna dokumentacja spawalnicza"]
+      },
+      {
+        "title": "Modernizacja linii produkcyjnej",
+        "description": "Przebudowa i modernizacja konstrukcji stalowych linii produkcyjnej w przemyśle automotive",
+        "challenge": "Istniejąca linia produkcyjna wymagała modernizacji bez zatrzymania produkcji. Konstrukcje stalowe były przeciążone i wymagały wzmocnienia.",
+        "solution": "Opracowaliśmy harmonogram prac w weekendy. Wzmocniliśmy istniejące konstrukcje dodatkowymi oczepami i stężeniami. Wymieniliśmy najbardziej zużyte elementy.",
+        "results": ["Zero przestojów produkcyjnych", "Zwiększenie nośności o 40%", "Przedłużenie żywotności o 20 lat", "Modernizacja w 8 weekendów"]
+      },
+      {
+        "title": "Konstrukcja stalowa wieży",
+        "description": "Projekt i wykonanie konstrukcji stalowej wieży telekomunikacyjnej o wysokości 45m",
+        "challenge": "Budowa wieży telekomunikacyjnej w trudnym terenie górskim. Wymagana odporność na wiatr do 200 km/h i montaż bez użycia dźwigów ciężkich.",
+        "solution": "Zaprojektowaliśmy konstrukcję kratową z segmentów montowanych helikopterem. Zastosowaliśmy połączenia śrubowe wysokiej wytrzymałości dla łatwego montażu.",
+        "results": ["Wysokość 45m", "Odporność na wiatr 200 km/h", "Montaż w 5 dni", "Bez uszkodzeń środowiska"]
+      },
+      {
+        "title": "Spawanie elementów maszynowych",
+        "description": "Precyzyjne spawanie elementów maszyn przemysłowych metodami TIG i MIG",
+        "challenge": "Elementy maszyn wymagały spawania z tolerancją ±0.5mm. Materiały obejmowały stale wysokostopowe i aluminium.",
+        "solution": "Wykorzystaliśmy spawanie TIG z kontrolą cyfrową parametrów. Każdy element przechodził pomiary 3D i kontrolę jakości.",
+        "results": ["Tolerancja ±0.3mm osiągnięta", "Zero reklamacji", "Seria 50 sztuk", "Czas realizacji: 2 tygodnie"]
+      },
+      {
+        "title": "Konstrukcja platformy stalowej",
+        "description": "Wykonanie wielopoziomowych platform stalowych dla centrum logistycznego",
+        "challenge": "Centrum logistyczne potrzebowało platformy roboczej na 3 poziomach z dużą nośnością i systemem schodów ewakuacyjnych.",
+        "solution": "Zaprojektowaliśmy modułową konstrukcję stalową z kratownic. System umożliwia łatwą rozbudowę w przyszłości.",
+        "results": ["3 poziomy po 500m² każdy", "Nośność 500 kg/m²", "Montaż w 3 tygodnie", "Możliwość rozbudowy"]
+      },
+      {
+        "title": "Remont konstrukcji stalowej zakładu",
+        "description": "Kompleksowy remont i wzmocnienie istniejącej konstrukcji stalowej budynku przemysłowego",
+        "challenge": "40-letnia konstrukcja wykazywała oznaki korozji i zmęczenia materiału. Budynek musiał pozostać w użyciu podczas remontu.",
+        "solution": "Przeprowadziliśmy szczegółową inwentaryzację. Wymieniliśmy skorodowane elementy, wzmocniliśmy węzły i zastosowaliśmy system antykorozyjny.",
+        "results": ["Przedłużenie żywotności o 30 lat", "Bez przestojów w produkcji", "Zwiększenie nośności o 20%", "Gwarancja 10 lat"]
+      },
+      {
+        "title": "Konstrukcja rampy załadunkowej",
+        "description": "Projekt i wykonanie ramp załadunkowych dla magazynu wysokiego składowania",
+        "challenge": "Magazyn wymagał 6 stanowisk załadunkowych z rampami hydraulicznymi i systemem zabezpieczeń.",
+        "solution": "Zaprojektowaliśmy i wykonaliśmy stalowe rampy z platformami hydraulicznymi. System zintegrowano z automatyką magazynu.",
+        "results": ["6 stanowisk załadunkowych", "Nośność 20 ton każde", "System hydrauliczny", "Integracja z BMS"]
+      },
+      {
+        "title": "Spawanie zbiorników przemysłowych",
+        "description": "Spawanie zbiorników ciśnieniowych zgodnie z normami AD 2000 i EN 13445",
+        "challenge": "Zbiorniki ciśnieniowe dla przemysłu chemicznego wymagały certyfikacji zgodnie z Dyrektywą PED i badań nieniszczących 100% spoin.",
+        "solution": "Zastosowaliśmy spawanie SAW z kontrolą parametrów. Wszystkie spoiny przeszły badania RTG. Dokumentacja zgodna z PED.",
+        "results": ["Certyfikat PED kategoria III", "100% spoin bez wad", "Ciśnienie robocze 16 bar", "Temperatura do 300°C"]
+      }
+    ]
+  },
+  "oFirmie": {
+    "title": "O Firmie",
+    "subtitle": "Poznaj historię SteelFlow Systems - od pierwszych iskier spawalniczych do konstrukcji, które kształtują przyszłość",
+    "stats": {
+      "experience": "Lat doświadczenia",
+      "projects": "Projektów",
+      "specialists": "Specjalistów",
+      "satisfaction": "Satysfakcji"
+    },
+    "storyTitle": "Nasza Historia",
+    "storySubtitle": "Odkryj interaktywną podróż przez 14 lat pasji, pracy i wzrostu. Od pierwszej spawarki do nowoczesnej firmy.",
+    "startButton": "START",
+    "exitStory": "Wyjdź z historii",
+    "chapter": "Rozdział",
+    "previousButton": "Poprzedni",
+    "nextButton": "Następny",
+    "endMessage": "Koniec historii!",
+    "endSubtitle": "Ale to dopiero początek naszej wspólnej drogi. Może właśnie Twój projekt będzie kolejnym rozdziałem?",
+    "chapters": [
+      {
+        "year": "2010",
+        "title": "Pierwsze kroki",
+        "description": "Wszystko zaczęło się od pracy w firmie taty po szkole. Letnie wakacje, pot, iskry spawalnicze i pierwsze doświadczenie z konstrukcjami stalowymi.",
+        "icon": "🔧"
+      },
+      {
+        "year": "2012",
+        "title": "Ukończenie szkoły",
+        "description": "Technikum budowlane zakończone. Dyplom w kieszeni, certyfikaty spawalnicze w dłoni. Czas na prawdziwe wyzwania!",
+        "icon": "🎓"
+      },
+      {
+        "year": "2013-2015",
+        "title": "Holandia - nauka od najlepszych",
+        "description": "Wyjazd do Holandii. Praca przy budowie mostów i platform morskich. Nauczyłem się precyzji, standardów europejskich i... trochę holenderskiego!",
+        "icon": "🌍"
+      },
+      {
+        "year": "2016-2018",
+        "title": "Szwajcaria - perfekcja w każdym detalu",
+        "description": "Szwajcarskie Alpy, tunele kolejowe, precyzja do milimetra. Tutaj poznałem znaczenie słowa 'jakość'. I zarabiałem w frankach! 💰",
+        "icon": "⛰️"
+      },
+      {
+        "year": "2019",
+        "title": "Spotkanie z Kamilem",
+        "description": "Na budowie w Zurychu poznałem Kamila. Po pracy rozmawialiśmy o tym, jak moglibyśmy robić to lepiej, szybciej, po naszemu. Ziarno zostało zasiane...",
+        "icon": "🤝"
+      },
+      {
+        "year": "2020",
+        "title": "Wielki plan",
+        "description": "Powrót do Polski. Z Kamilem w małym mieszkaniu w Warszawie szkicujemy biznesplan na kartkach A4. Pizza, kawa i wielkie marzenia. 'A może byśmy spróbowali?'",
+        "icon": "📋"
+      },
+      {
+        "year": "2021",
+        "title": "SteelFlow Systems - narodziny firmy",
+        "description": "Rejestracja działalności. Pierwszy warsztat wynajęty. Pierwsza spawarka kupiona (używana, ale sprawna!). Jesteśmy w biznesie!",
+        "icon": "🏭"
+      },
+      {
+        "year": "2022",
+        "title": "Pierwsi klienci",
+        "description": "Pierwszy kontrakt - mała konstrukcja dla lokalnej piekarni. Potem warsztat samochodowy. Referencje zaczynają napływać. Marketing szeptany działa!",
+        "icon": "🎯"
+      },
+      {
+        "year": "2023",
+        "title": "'Konkurencja' rodzinna 😄",
+        "description": "Tata zauważył, że mamy wspólnych klientów. 'Synku, podbierasz mi ludzi?' - śmialiśmy się przy niedzielnym obiedzie. Tak naprawdę był dumny!",
+        "icon": "😂"
+      },
+      {
+        "year": "2024",
+        "title": "Dzisiaj",
+        "description": "Zespół 12 osób. Nowoczesny warsztat. Certyfikaty ISO. Projekty w całej Polsce. Od małego warsztatu do firmy, która buduje przyszłość ze stali.",
+        "icon": "🚀"
+      }
+    ]
   },
   "footer": {
     "about": "O Firmie",

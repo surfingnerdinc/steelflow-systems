@@ -138,19 +138,165 @@
   },
   "realizacje": {
     "title": "Projects",
-    "subtitle": "Discover our comprehensive projects in steel construction and welding",
+    "subtitle": "Discover our comprehensive projects in the field of steel construction and welding",
     "filters": {
       "all": "All",
-      "steel": "Steel Construction",
+      "steel": "Steel Structures",
       "welding": "Welding",
       "renovation": "Renovations"
     },
     "categories": {
-      "steel": "Steel Construction",
+      "steel": "Steel Structures",
       "welding": "Welding",
       "renovation": "Renovations"
     },
-    "noResults": "No projects in selected category"
+    "noResults": "No projects in the selected category",
+    "projects": [
+      {
+        "title": "Industrial Hall Steel Structure",
+        "description": "Comprehensive steel structure realization for a production facility with 5000m² area",
+        "challenge": "The client needed a 5000m² building with large column-free spans for flexible production space organization. Fast completion and minimal maintenance costs were required.",
+        "solution": "We designed and built a steel structure with 30m span truss girders. We used high-grade S355 steel, allowing for cross-section optimization. Project completed in 4 months.",
+        "results": ["30m span without internal columns", "15% savings compared to original budget", "Completion within 4 months", "EN 1090 certificate"]
+      },
+      {
+        "title": "Bridge Structure Welding",
+        "description": "Welding of road bridge elements with certified welding procedures",
+        "challenge": "The railway bridge required welding according to the strictest railway standards. Every weld had to be fully documented and tested with non-destructive methods.",
+        "solution": "We applied certified WPS welding procedures according to EN ISO 15614. Welding was performed using MAG and SAW methods. All welds passed ultrasonic and radiographic testing.",
+        "results": ["100% of welds accepted", "Certification according to railway standards", "Zero critical defects", "Complete welding documentation"]
+      },
+      {
+        "title": "Production Line Modernization",
+        "description": "Reconstruction and modernization of steel structures in an automotive production line",
+        "challenge": "The existing production line required modernization without production shutdown. Steel structures were overloaded and needed reinforcement.",
+        "solution": "We developed a weekend work schedule. We reinforced existing structures with additional purlins and bracing. We replaced the most worn elements.",
+        "results": ["Zero production downtime", "40% load capacity increase", "20-year lifespan extension", "Modernization in 8 weekends"]
+      },
+      {
+        "title": "Steel Tower Construction",
+        "description": "Design and construction of a 45m high telecommunication tower steel structure",
+        "challenge": "Telecommunication tower construction in difficult mountain terrain. Required wind resistance up to 200 km/h and assembly without heavy cranes.",
+        "solution": "We designed a lattice structure from segments assembled by helicopter. We used high-strength bolted connections for easy assembly.",
+        "results": ["45m height", "200 km/h wind resistance", "5-day assembly", "No environmental damage"]
+      },
+      {
+        "title": "Machine Parts Welding",
+        "description": "Precision welding of industrial machine parts using TIG and MIG methods",
+        "challenge": "Machine parts required welding with ±0.5mm tolerance. Materials included high-alloy steels and aluminum.",
+        "solution": "We used TIG welding with digital parameter control. Each element underwent 3D measurements and quality control.",
+        "results": ["±0.3mm tolerance achieved", "Zero complaints", "Series of 50 pieces", "Completion time: 2 weeks"]
+      },
+      {
+        "title": "Steel Platform Construction",
+        "description": "Construction of multi-level steel platforms for a logistics center",
+        "challenge": "The logistics center needed a 3-level work platform with high load capacity and an evacuation staircase system.",
+        "solution": "We designed a modular steel structure from trusses. The system allows for easy future expansion.",
+        "results": ["3 levels of 500m² each", "500 kg/m² load capacity", "3-week assembly", "Expansion capability"]
+      },
+      {
+        "title": "Plant Steel Structure Renovation",
+        "description": "Comprehensive renovation and reinforcement of existing industrial building steel structure",
+        "challenge": "The 40-year-old structure showed signs of corrosion and material fatigue. The building had to remain in use during renovation.",
+        "solution": "We conducted a detailed inventory. We replaced corroded elements, reinforced nodes, and applied an anti-corrosion system.",
+        "results": ["30-year lifespan extension", "No production downtime", "20% load capacity increase", "10-year warranty"]
+      },
+      {
+        "title": "Loading Ramp Construction",
+        "description": "Design and construction of loading ramps for a high-bay warehouse",
+        "challenge": "The warehouse required 6 loading stations with hydraulic ramps and a safety system.",
+        "solution": "We designed and built steel ramps with hydraulic platforms. The system was integrated with warehouse automation.",
+        "results": ["6 loading stations", "20 tons capacity each", "Hydraulic system", "BMS integration"]
+      },
+      {
+        "title": "Industrial Tank Welding",
+        "description": "Welding of pressure vessels according to AD 2000 and EN 13445 standards",
+        "challenge": "Pressure vessels for the chemical industry required certification according to PED Directive and 100% non-destructive testing of welds.",
+        "solution": "We used SAW welding with parameter control. All welds passed X-ray testing. Documentation compliant with PED.",
+        "results": ["PED certificate category III", "100% defect-free welds", "16 bar working pressure", "Temperature up to 300°C"]
+      }
+    ]
+  },
+  "oFirmie": {
+    "title": "About Us",
+    "subtitle": "Discover the story of SteelFlow Systems - from the first welding sparks to constructions that shape the future",
+    "stats": {
+      "experience": "Years of experience",
+      "projects": "Projects",
+      "specialists": "Specialists",
+      "satisfaction": "Satisfaction"
+    },
+    "storyTitle": "Our Story",
+    "storySubtitle": "Discover an interactive journey through 14 years of passion, work and growth. From the first welder to a modern company.",
+    "startButton": "START",
+    "exitStory": "Exit story",
+    "chapter": "Chapter",
+    "previousButton": "Previous",
+    "nextButton": "Next",
+    "endMessage": "End of story!",
+    "endSubtitle": "But this is just the beginning of our journey together. Maybe your project will be the next chapter?",
+    "chapters": [
+      {
+        "year": "2010",
+        "title": "First steps",
+        "description": "It all started with working at dad's company after school. Summer holidays, sweat, welding sparks and first experience with steel structures.",
+        "icon": "🔧"
+      },
+      {
+        "year": "2012",
+        "title": "School graduation",
+        "description": "Construction technical school completed. Diploma in pocket, welding certificates in hand. Time for real challenges!",
+        "icon": "🎓"
+      },
+      {
+        "year": "2013-2015",
+        "title": "Netherlands - learning from the best",
+        "description": "Trip to the Netherlands. Working on bridge and offshore platform construction. I learned precision, European standards and... some Dutch!",
+        "icon": "🌍"
+      },
+      {
+        "year": "2016-2018",
+        "title": "Switzerland - perfection in every detail",
+        "description": "Swiss Alps, railway tunnels, millimeter precision. Here I learned the meaning of 'quality'. And earned in francs! 💰",
+        "icon": "⛰️"
+      },
+      {
+        "year": "2019",
+        "title": "Meeting Kamil",
+        "description": "At a construction site in Zurich I met Kamil. After work we talked about how we could do it better, faster, our way. The seed was planted...",
+        "icon": "🤝"
+      },
+      {
+        "year": "2020",
+        "title": "The big plan",
+        "description": "Return to Poland. With Kamil in a small apartment in Warsaw, sketching a business plan on A4 sheets. Pizza, coffee and big dreams. 'Maybe we should try?'",
+        "icon": "📋"
+      },
+      {
+        "year": "2021",
+        "title": "SteelFlow Systems - birth of the company",
+        "description": "Business registration. First workshop rented. First welder bought (used, but working!). We're in business!",
+        "icon": "🏭"
+      },
+      {
+        "year": "2022",
+        "title": "First clients",
+        "description": "First contract - small structure for local bakery. Then car workshop. References start flowing. Word-of-mouth marketing works!",
+        "icon": "🎯"
+      },
+      {
+        "year": "2023",
+        "title": "Family 'competition' 😄",
+        "description": "Dad noticed we have common clients. 'Son, are you stealing my people?' - we laughed at Sunday dinner. He was actually proud!",
+        "icon": "😂"
+      },
+      {
+        "year": "2024",
+        "title": "Today",
+        "description": "Team of 12 people. Modern workshop. ISO certificates. Projects throughout Poland. From a small workshop to a company building the future with steel.",
+        "icon": "🚀"
+      }
+    ]
   },
   "footer": {
     "about": "About Us",

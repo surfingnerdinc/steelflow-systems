@@ -8,11 +8,11 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [
-    { href: '#home', label: tNav('home') },
-    { href: '#about', label: tNav('about') },
-    { href: '#services', label: tNav('services') },
-    { href: '#portfolio', label: tNav('portfolio') },
-    { href: '#contact', label: tNav('contact') },
+    { href: '/', label: tNav('home') },
+    { href: '/o-firmie', label: tNav('about') },
+    { href: '/#services', label: tNav('services') },
+    { href: '/realizacje', label: tNav('portfolio') },
+    { href: '/#contact', label: tNav('contact') },
   ];
 
   const socialLinks = [

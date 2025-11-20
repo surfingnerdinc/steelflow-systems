@@ -104,7 +104,7 @@ export default function Navigation() {
           {/* Logo - Left - minimalist */}
           <a href="/#home" className="flex items-center space-x-3 shrink-0 group">
             <img 
-              src="/images/steelflow-logo.svg" 
+              src="/images/steelflow-logo1.svg" 
               alt="SteelFlow Systems" 
               className="h-14 w-auto opacity-90 group-hover:opacity-100 transition-opacity"
               onError={(e) => {
@@ -158,11 +158,11 @@ export default function Navigation() {
               </motion.div>
             </button>
 
-            {/* Language Dropdown - scalable design */}
+            {/* Language Dropdown - minimal design without background */}
             <div ref={langDropdownRef} className="relative">
               <button
                 onClick={() => setIsLangDropdownOpen(!isLangDropdownOpen)}
-                className="flex items-center gap-2 px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200 opacity-100"
+                className="flex items-center gap-2 px-2 py-2 hover:opacity-70 transition-opacity duration-200"
               >
                 <span className="text-xl">{currentLanguage.flag}</span>
                 <span className="text-sm font-medium text-gray-900 dark:text-white">

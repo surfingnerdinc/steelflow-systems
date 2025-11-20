@@ -4,38 +4,61 @@ import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { useInView } from 'react-intersection-observer';
 import { useState } from 'react';
+import ProjectModal from '@/components/ProjectModal';
 
 export default function Portfolio() {
   const t = useTranslations('portfolio');
+  const tRealizacje = useTranslations('realizacje');
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
-  // Najlepsze projekty - pokazujemy tylko 4 na stronie głównej
-  const projects = [
-    {
-      title: 'Konstrukcja stalowa hali przemysłowej',
-      category: 'Konstrukcje stalowe',
-      image: 'https://images.unsplash.com/photo-1565372195458-9de0b320ef04?w=800&q=80',
-    },
-    {
-      title: 'Spawanie konstrukcji mostowej',
-      category: 'Spawanie',
-      image: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=80',
-    },
-    {
-      title: 'Modernizacja linii produkcyjnej',
-      category: 'Modernizacje',
-      image: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80',
-    },
-    {
-      title: 'Konstrukcja stalowa wieży',
-      category: 'Konstrukcje stalowe',
-      image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80',
-    },
+  // Najlepsze projekty - pokazujemy tylko 4 na stronie głównej (pierwsze 4 z realizacje)
+  const projectImages = [
+    'https://images.unsplash.com/photo-1565372195458-9de0b320ef04?w=800&q=80',
+    'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=80',
+    'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80',
+    'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80',
   ];
+
+  const projectCategories = ['steel', 'welding', 'renovation', 'steel'];
+  const projectYears = ['2024', '2024', '2023', '2023'];
+
+  const galleryImages = [
+    [
+      'https://images.unsplash.com/photo-1565372195458-9de0b320ef04?w=1200&q=80',
+      'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1200&q=80',
+      'https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=1200&q=80',
+      'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=1200&q=80',
+    ],
+    [
+      'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&q=80',
+      'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1200&q=80',
+      'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1200&q=80',
+    ],
+    [
+      'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&q=80',
+      'https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?w=1200&q=80',
+    ],
+    [
+      'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1200&q=80',
+      'https://images.unsplash.com/photo-1565372195458-9de0b320ef04?w=1200&q=80',
+    ],
+  ];
+
+  const projects = Array.from({ length: 4 }, (_, i) => ({
+    title: tRealizacje(`projects.${i}.title`),
+    category: projectCategories[i],
+    image: projectImages[i],
+    year: projectYears[i],
+    description: tRealizacje(`projects.${i}.description`),
+    challenge: tRealizacje(`projects.${i}.challenge`),
+    solution: tRealizacje(`projects.${i}.solution`),
+    results: tRealizacje.raw(`projects.${i}.results`) as string[],
+    gallery: galleryImages[i],
+  }));
 
   return (
     <section id="portfolio" ref={ref} className="py-32 md:py-48 bg-white dark:bg-black">
@@ -127,35 +150,12 @@ export default function Portfolio() {
         </motion.div>
       </div>
 
-      {/* Lightbox Modal */}
+      {/* Project Detail Modal */}
       {selectedImage !== null && (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4"
-          onClick={() => setSelectedImage(null)}
-        >
-          <div className="relative max-w-6xl w-full">
-            <button
-              onClick={() => setSelectedImage(null)}
-              className="absolute top-4 right-4 text-white hover:text-red-600 transition-colors"
-            >
-              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-            <img
-              src={projects[selectedImage].image}
-              alt={projects[selectedImage].title}
-              className="w-full h-auto"
-            />
-            <div className="mt-4 text-white">
-              <h3 className="text-2xl font-bold">{projects[selectedImage].title}</h3>
-              <p className="text-teal-500">{projects[selectedImage].category}</p>
-            </div>
-          </div>
-        </motion.div>
+        <ProjectModal
+          project={projects[selectedImage]}
+          onClose={() => setSelectedImage(null)}
+        />
       )}
     </section>
   );

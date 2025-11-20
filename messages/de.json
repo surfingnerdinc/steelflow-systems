@@ -150,7 +150,153 @@
       "welding": "Schweißen",
       "renovation": "Modernisierungen"
     },
-    "noResults": "Keine Projekte in der ausgewählten Kategorie"
+    "noResults": "Keine Projekte in der ausgewählten Kategorie",
+    "projects": [
+      {
+        "title": "Industriehallen-Stahlkonstruktion",
+        "description": "Umfassende Stahlkonstruktionsrealisierung für eine Produktionsanlage mit 5000m² Fläche",
+        "challenge": "Der Kunde benötigte ein 5000m² Gebäude mit großen stützenfreien Spannweiten für flexible Produktionsraumorganisation. Schnelle Fertigstellung und minimale Wartungskosten waren erforderlich.",
+        "solution": "Wir entwarfen und bauten eine Stahlkonstruktion mit 30m Spannweite Fachwerkträgern. Wir verwendeten hochfesten Stahl S355, was eine Querschnittsoptimierung ermöglichte. Projekt in 4 Monaten abgeschlossen.",
+        "results": ["30m Spannweite ohne Innenstützen", "15% Einsparung gegenüber ursprünglichem Budget", "Fertigstellung innerhalb von 4 Monaten", "EN 1090 Zertifikat"]
+      },
+      {
+        "title": "Brückenkonstruktion Schweißen",
+        "description": "Schweißen von Straßenbrückenelementen mit zertifizierten Schweißverfahren",
+        "challenge": "Die Eisenbahnbrücke erforderte Schweißen nach strengsten Eisenbahnnormen. Jede Schweißnaht musste vollständig dokumentiert und mit zerstörungsfreien Methoden geprüft werden.",
+        "solution": "Wir wendeten zertifizierte WPS-Schweißverfahren nach EN ISO 15614 an. Schweißen wurde mit MAG- und UP-Verfahren durchgeführt. Alle Nähte bestanden Ultraschall- und Röntgenprüfungen.",
+        "results": ["100% der Nähte akzeptiert", "Zertifizierung nach Eisenbahnnormen", "Null kritische Fehler", "Vollständige Schweißdokumentation"]
+      },
+      {
+        "title": "Produktionslinie Modernisierung",
+        "description": "Umbau und Modernisierung von Stahlkonstruktionen in einer Automobilproduktionslinie",
+        "challenge": "Die bestehende Produktionslinie benötigte Modernisierung ohne Produktionsstillstand. Stahlkonstruktionen waren überlastet und benötigten Verstärkung.",
+        "solution": "Wir entwickelten einen Wochenend-Arbeitsplan. Wir verstärkten bestehende Konstruktionen mit zusätzlichen Pfetten und Aussteifungen. Wir ersetzten die am meisten verschlissenen Elemente.",
+        "results": ["Null Produktionsausfallzeit", "40% Tragfähigkeitssteigerung", "20 Jahre Lebensdauerverlängerung", "Modernisierung in 8 Wochenenden"]
+      },
+      {
+        "title": "Stahlturm Konstruktion",
+        "description": "Entwurf und Bau einer 45m hohen Telekommunikationsturm-Stahlkonstruktion",
+        "challenge": "Telekommunikationsturmbau in schwierigem Berggelände. Erforderliche Windbeständigkeit bis 200 km/h und Montage ohne Schwerlastkräne.",
+        "solution": "Wir entwarfen eine Gitterkonstruktion aus Segmenten, die mit Hubschrauber montiert wurden. Wir verwendeten hochfeste Schraubverbindungen für einfache Montage.",
+        "results": ["45m Höhe", "200 km/h Windbeständigkeit", "5-Tage Montage", "Keine Umweltschäden"]
+      },
+      {
+        "title": "Maschinenteile Schweißen",
+        "description": "Präzisionsschweißen von Industriemaschinenteilen mit WIG- und MIG-Verfahren",
+        "challenge": "Maschinenteile erforderten Schweißen mit ±0,5mm Toleranz. Materialien umfassten hochlegierte Stähle und Aluminium.",
+        "solution": "Wir verwendeten WIG-Schweißen mit digitaler Parameterkontrolle. Jedes Element durchlief 3D-Messungen und Qualitätskontrolle.",
+        "results": ["±0,3mm Toleranz erreicht", "Null Reklamationen", "Serie von 50 Stück", "Fertigstellungszeit: 2 Wochen"]
+      },
+      {
+        "title": "Stahlplattform Konstruktion",
+        "description": "Bau von mehrstöckigen Stahlplattformen für ein Logistikzentrum",
+        "challenge": "Das Logistikzentrum benötigte eine 3-stöckige Arbeitsplattform mit hoher Tragfähigkeit und einem Evakuierungstreppensystem.",
+        "solution": "Wir entwarfen eine modulare Stahlkonstruktion aus Fachwerk. Das System ermöglicht eine einfache zukünftige Erweiterung.",
+        "results": ["3 Ebenen à 500m²", "500 kg/m² Tragfähigkeit", "3-Wochen Montage", "Erweiterungsfähigkeit"]
+      },
+      {
+        "title": "Werk Stahlkonstruktion Renovierung",
+        "description": "Umfassende Renovierung und Verstärkung bestehender Industriegebäude-Stahlkonstruktion",
+        "challenge": "Die 40 Jahre alte Konstruktion zeigte Anzeichen von Korrosion und Materialermüdung. Das Gebäude musste während der Renovierung in Betrieb bleiben.",
+        "solution": "Wir führten eine detaillierte Bestandsaufnahme durch. Wir ersetzten korrodierte Elemente, verstärkten Knoten und wendeten ein Korrosionsschutzsystem an.",
+        "results": ["30 Jahre Lebensdauerverlängerung", "Keine Produktionsausfallzeit", "20% Tragfähigkeitssteigerung", "10 Jahre Garantie"]
+      },
+      {
+        "title": "Laderampe Konstruktion",
+        "description": "Entwurf und Bau von Laderampen für ein Hochregallager",
+        "challenge": "Das Lager benötigte 6 Ladestationen mit hydraulischen Rampen und einem Sicherheitssystem.",
+        "solution": "Wir entwarfen und bauten Stahlrampen mit Hydraulikplattformen. Das System wurde in die Lagerautomatisierung integriert.",
+        "results": ["6 Ladestationen", "Je 20 Tonnen Tragfähigkeit", "Hydrauliksystem", "BMS-Integration"]
+      },
+      {
+        "title": "Industrietank Schweißen",
+        "description": "Schweißen von Druckbehältern nach AD 2000 und EN 13445 Normen",
+        "challenge": "Druckbehälter für die chemische Industrie benötigten Zertifizierung nach PED-Richtlinie und 100% zerstörungsfreie Prüfung der Nähte.",
+        "solution": "Wir verwendeten UP-Schweißen mit Parameterkontrolle. Alle Nähte bestanden Röntgenprüfungen. Dokumentation PED-konform.",
+        "results": ["PED-Zertifikat Kategorie III", "100% fehlerfreie Nähte", "16 bar Arbeitsdruck", "Temperatur bis 300°C"]
+      }
+    ]
+  },
+  "oFirmie": {
+    "title": "Über Uns",
+    "subtitle": "Entdecken Sie die Geschichte von SteelFlow Systems - von den ersten Schweißfunken bis zu Konstruktionen, die die Zukunft gestalten",
+    "stats": {
+      "experience": "Jahre Erfahrung",
+      "projects": "Projekte",
+      "specialists": "Spezialisten",
+      "satisfaction": "Zufriedenheit"
+    },
+    "storyTitle": "Unsere Geschichte",
+    "storySubtitle": "Entdecken Sie eine interaktive Reise durch 14 Jahre Leidenschaft, Arbeit und Wachstum. Vom ersten Schweißgerät bis zum modernen Unternehmen.",
+    "startButton": "START",
+    "exitStory": "Geschichte verlassen",
+    "chapter": "Kapitel",
+    "previousButton": "Zurück",
+    "nextButton": "Weiter",
+    "endMessage": "Ende der Geschichte!",
+    "endSubtitle": "Aber das ist nur der Anfang unserer gemeinsamen Reise. Vielleicht wird Ihr Projekt das nächste Kapitel?",
+    "chapters": [
+      {
+        "year": "2010",
+        "title": "Erste Schritte",
+        "description": "Alles begann mit der Arbeit in Vaters Firma nach der Schule. Sommerferien, Schweiß, Schweißfunken und erste Erfahrungen mit Stahlkonstruktionen.",
+        "icon": "🔧"
+      },
+      {
+        "year": "2012",
+        "title": "Schulabschluss",
+        "description": "Bautechnikschule abgeschlossen. Diplom in der Tasche, Schweißzertifikate in der Hand. Zeit für echte Herausforderungen!",
+        "icon": "🎓"
+      },
+      {
+        "year": "2013-2015",
+        "title": "Niederlande - von den Besten lernen",
+        "description": "Reise in die Niederlande. Arbeit am Brücken- und Offshore-Plattformbau. Ich lernte Präzision, europäische Standards und... etwas Niederländisch!",
+        "icon": "🌍"
+      },
+      {
+        "year": "2016-2018",
+        "title": "Schweiz - Perfektion in jedem Detail",
+        "description": "Schweizer Alpen, Bahntunnel, Millimeter-Präzision. Hier lernte ich die Bedeutung von 'Qualität'. Und verdiente in Franken! 💰",
+        "icon": "⛰️"
+      },
+      {
+        "year": "2019",
+        "title": "Treffen mit Kamil",
+        "description": "Auf einer Baustelle in Zürich traf ich Kamil. Nach der Arbeit sprachen wir darüber, wie wir es besser, schneller, auf unsere Weise machen könnten. Der Samen war gesät...",
+        "icon": "🤝"
+      },
+      {
+        "year": "2020",
+        "title": "Der große Plan",
+        "description": "Rückkehr nach Polen. Mit Kamil in einer kleinen Wohnung in Warschau skizzieren wir einen Businessplan auf A4-Blättern. Pizza, Kaffee und große Träume. 'Sollen wir es versuchen?'",
+        "icon": "📋"
+      },
+      {
+        "year": "2021",
+        "title": "SteelFlow Systems - Geburt des Unternehmens",
+        "description": "Geschäftsanmeldung. Erste Werkstatt gemietet. Erstes Schweißgerät gekauft (gebraucht, aber funktioniert!). Wir sind im Geschäft!",
+        "icon": "🏭"
+      },
+      {
+        "year": "2022",
+        "title": "Erste Kunden",
+        "description": "Erster Auftrag - kleine Konstruktion für lokale Bäckerei. Dann Autowerkstatt. Referenzen beginnen zu fließen. Mundpropaganda funktioniert!",
+        "icon": "🎯"
+      },
+      {
+        "year": "2023",
+        "title": "Familien-'Konkurrenz' 😄",
+        "description": "Vater bemerkte, dass wir gemeinsame Kunden haben. 'Sohn, stiehlst du mir Leute?' - wir lachten beim Sonntagsessen. Er war eigentlich stolz!",
+        "icon": "😂"
+      },
+      {
+        "year": "2024",
+        "title": "Heute",
+        "description": "Team von 12 Personen. Moderne Werkstatt. ISO-Zertifikate. Projekte in ganz Polen. Von einer kleinen Werkstatt zu einem Unternehmen, das die Zukunft mit Stahl baut.",
+        "icon": "🚀"
+      }
+    ]
   },
   "footer": {
     "about": "Über Uns",
