@@ -83,7 +83,7 @@ export default function Hero() {
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold text-white mb-8 tracking-tight leading-none">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold text-white mb-8 tracking-tight leading-none">
               <span className="text-teal-400">{t('title').split(' ')[0]}</span>
               <br />
               <span className="text-white">{t('title').split(' ')[1]}</span>
@@ -240,6 +240,162 @@ export default function Hero() {
                   animate={{ pathLength: 1 }}
                   transition={{ duration: 1, delay: 1.4 }}
                 />
+
+                {/* Welding Point - Połączenie górnej półki z środnikiem */}
+                <motion.g
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.5, delay: 2.5 }}
+                >
+                  {/* Outer glow - largest */}
+                  <motion.circle
+                    cx="250"
+                    cy="130"
+                    r="20"
+                    fill="#f59e0b"
+                    opacity="0.15"
+                    animate={{
+                      scale: [1, 1.8, 1],
+                      opacity: [0.15, 0.4, 0.15],
+                    }}
+                    transition={{
+                      duration: 1.5,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                    }}
+                  />
+                  
+                  {/* Middle glow */}
+                  <motion.circle
+                    cx="250"
+                    cy="130"
+                    r="12"
+                    fill="#f59e0b"
+                    opacity="0.4"
+                    animate={{
+                      scale: [1, 1.4, 1],
+                      opacity: [0.4, 0.7, 0.4],
+                    }}
+                    transition={{
+                      duration: 1.2,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                    }}
+                  />
+                  
+                  {/* Core welding point - bright */}
+                  <motion.circle
+                    cx="250"
+                    cy="130"
+                    r="6"
+                    fill="#fbbf24"
+                    animate={{
+                      scale: [1, 1.3, 1],
+                      opacity: [0.9, 1, 0.9],
+                    }}
+                    transition={{
+                      duration: 0.8,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                    }}
+                  />
+                  
+                  {/* Hot center */}
+                  <motion.circle
+                    cx="250"
+                    cy="130"
+                    r="3"
+                    fill="#ffffff"
+                    animate={{
+                      opacity: [0.8, 1, 0.8],
+                    }}
+                    transition={{
+                      duration: 0.5,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                    }}
+                  />
+
+                  {/* Welding sparks - longer and brighter */}
+                  {[...Array(12)].map((_, i) => {
+                    const angle = (i * 30 * Math.PI) / 180;
+                    const distance = 20 + Math.random() * 20;
+                    const endX = 250 + Math.cos(angle) * distance;
+                    const endY = 130 + Math.sin(angle) * distance;
+                    
+                    return (
+                      <motion.line
+                        key={i}
+                        x1="250"
+                        y1="130"
+                        x2={endX}
+                        y2={endY}
+                        stroke="#fbbf24"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        initial={{ pathLength: 0, opacity: 0 }}
+                        animate={{
+                          pathLength: [0, 1, 0.8, 0],
+                          opacity: [0, 1, 0.6, 0],
+                        }}
+                        transition={{
+                          duration: 1.2,
+                          repeat: Infinity,
+                          delay: i * 0.1,
+                          ease: "easeOut",
+                        }}
+                      />
+                    );
+                  })}
+
+                  {/* Additional flying sparks - larger and brighter */}
+                  {[...Array(8)].map((_, i) => {
+                    const angle = (i * 45 * Math.PI) / 180;
+                    const distance = 12 + Math.random() * 8;
+                    const sparkX = 250 + Math.cos(angle) * distance;
+                    const sparkY = 130 + Math.sin(angle) * distance;
+                    
+                    return (
+                      <motion.circle
+                        key={`spark-${i}`}
+                        cx={sparkX}
+                        cy={sparkY}
+                        r="2.5"
+                        fill="#fbbf24"
+                        initial={{ opacity: 0, scale: 0 }}
+                        animate={{
+                          opacity: [0, 1, 0.7, 0],
+                          scale: [0, 1.2, 0.8, 0],
+                        }}
+                        transition={{
+                          duration: 1,
+                          repeat: Infinity,
+                          delay: i * 0.15,
+                          ease: "easeOut",
+                        }}
+                      />
+                    );
+                  })}
+
+                  {/* Weld symbol annotation - brighter and larger */}
+                  <motion.text
+                    x="280"
+                    y="122"
+                    fill="#fbbf24"
+                    fontSize="13"
+                    fontWeight="bold"
+                    fontFamily="monospace"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: [0.7, 1, 0.7] }}
+                    transition={{
+                      duration: 1.5,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                    }}
+                  >
+                    ⚡ WELD
+                  </motion.text>
+                </motion.g>
               </svg>
             </div>
           </motion.div>
@@ -250,12 +406,12 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.4 }}
-          className="hidden lg:flex w-1/2 h-full items-center justify-center relative flex-col"
+          className="hidden lg:flex w-1/2 h-full items-center justify-center relative flex-col group"
         >
           <div className="relative w-full max-w-2xl flex flex-col items-center justify-center">
             {/* Technical Drawing Container */}
-            <div className="relative w-full aspect-square">
-              <svg viewBox="0 0 500 500" className="w-full h-full">
+            <div className="relative w-full aspect-square cursor-pointer transition-all duration-500 group-hover:scale-105">
+              <svg viewBox="0 0 500 500" className="w-full h-full transition-all duration-500 group-hover:drop-shadow-[0_0_30px_rgba(20,184,166,0.5)]">
                 {/* Grid Background */}
                 <defs>
                   <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
@@ -364,6 +520,128 @@ export default function Hero() {
                   animate={{ pathLength: 1 }}
                   transition={{ duration: 1, delay: 1.4 }}
                 />
+
+                {/* HOVER EFFECTS - Corner Weld Points */}
+                <motion.g className="opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  {/* Top-Left Corner Weld */}
+                  <motion.g>
+                    <motion.circle cx="150" cy="100" r="10" fill="#f59e0b" opacity="0.2"
+                      animate={{ scale: [1, 1.4, 1], opacity: [0.2, 0.4, 0.2] }}
+                      transition={{ duration: 1.5, repeat: Infinity }}
+                    />
+                    <motion.circle cx="150" cy="100" r="5" fill="#fbbf24"
+                      animate={{ scale: [1, 1.2, 1] }}
+                      transition={{ duration: 0.8, repeat: Infinity }}
+                    />
+                    {[...Array(6)].map((_, i) => {
+                      const angle = (i * 60 * Math.PI) / 180;
+                      const dist = 8 + Math.random() * 6;
+                      return (
+                        <motion.line
+                          key={`tl-${i}`}
+                          x1="150" y1="100"
+                          x2={150 + Math.cos(angle) * dist}
+                          y2={100 + Math.sin(angle) * dist}
+                          stroke="#fbbf24" strokeWidth="1.5" strokeLinecap="round"
+                          animate={{ pathLength: [0, 1, 0], opacity: [0, 1, 0] }}
+                          transition={{ duration: 1, repeat: Infinity, delay: i * 0.15 }}
+                        />
+                      );
+                    })}
+                  </motion.g>
+
+                  {/* Top-Right Corner Weld */}
+                  <motion.g>
+                    <motion.circle cx="350" cy="100" r="10" fill="#f59e0b" opacity="0.2"
+                      animate={{ scale: [1, 1.4, 1], opacity: [0.2, 0.4, 0.2] }}
+                      transition={{ duration: 1.5, repeat: Infinity, delay: 0.3 }}
+                    />
+                    <motion.circle cx="350" cy="100" r="5" fill="#fbbf24"
+                      animate={{ scale: [1, 1.2, 1] }}
+                      transition={{ duration: 0.8, repeat: Infinity, delay: 0.3 }}
+                    />
+                    {[...Array(6)].map((_, i) => {
+                      const angle = (i * 60 * Math.PI) / 180;
+                      const dist = 8 + Math.random() * 6;
+                      return (
+                        <motion.line
+                          key={`tr-${i}`}
+                          x1="350" y1="100"
+                          x2={350 + Math.cos(angle) * dist}
+                          y2={100 + Math.sin(angle) * dist}
+                          stroke="#fbbf24" strokeWidth="1.5" strokeLinecap="round"
+                          animate={{ pathLength: [0, 1, 0], opacity: [0, 1, 0] }}
+                          transition={{ duration: 1, repeat: Infinity, delay: i * 0.15 + 0.3 }}
+                        />
+                      );
+                    })}
+                  </motion.g>
+
+                  {/* Bottom-Left Corner Weld */}
+                  <motion.g>
+                    <motion.circle cx="150" cy="400" r="10" fill="#f59e0b" opacity="0.2"
+                      animate={{ scale: [1, 1.4, 1], opacity: [0.2, 0.4, 0.2] }}
+                      transition={{ duration: 1.5, repeat: Infinity, delay: 0.6 }}
+                    />
+                    <motion.circle cx="150" cy="400" r="5" fill="#fbbf24"
+                      animate={{ scale: [1, 1.2, 1] }}
+                      transition={{ duration: 0.8, repeat: Infinity, delay: 0.6 }}
+                    />
+                    {[...Array(6)].map((_, i) => {
+                      const angle = (i * 60 * Math.PI) / 180;
+                      const dist = 8 + Math.random() * 6;
+                      return (
+                        <motion.line
+                          key={`bl-${i}`}
+                          x1="150" y1="400"
+                          x2={150 + Math.cos(angle) * dist}
+                          y2={400 + Math.sin(angle) * dist}
+                          stroke="#fbbf24" strokeWidth="1.5" strokeLinecap="round"
+                          animate={{ pathLength: [0, 1, 0], opacity: [0, 1, 0] }}
+                          transition={{ duration: 1, repeat: Infinity, delay: i * 0.15 + 0.6 }}
+                        />
+                      );
+                    })}
+                  </motion.g>
+
+                  {/* Bottom-Right Corner Weld */}
+                  <motion.g>
+                    <motion.circle cx="350" cy="400" r="10" fill="#f59e0b" opacity="0.2"
+                      animate={{ scale: [1, 1.4, 1], opacity: [0.2, 0.4, 0.2] }}
+                      transition={{ duration: 1.5, repeat: Infinity, delay: 0.9 }}
+                    />
+                    <motion.circle cx="350" cy="400" r="5" fill="#fbbf24"
+                      animate={{ scale: [1, 1.2, 1] }}
+                      transition={{ duration: 0.8, repeat: Infinity, delay: 0.9 }}
+                    />
+                    {[...Array(6)].map((_, i) => {
+                      const angle = (i * 60 * Math.PI) / 180;
+                      const dist = 8 + Math.random() * 6;
+                      return (
+                        <motion.line
+                          key={`br-${i}`}
+                          x1="350" y1="400"
+                          x2={350 + Math.cos(angle) * dist}
+                          y2={400 + Math.sin(angle) * dist}
+                          stroke="#fbbf24" strokeWidth="1.5" strokeLinecap="round"
+                          animate={{ pathLength: [0, 1, 0], opacity: [0, 1, 0] }}
+                          transition={{ duration: 1, repeat: Infinity, delay: i * 0.15 + 0.9 }}
+                        />
+                      );
+                    })}
+                  </motion.g>
+
+                  {/* Hover Info Label */}
+                  <motion.text
+                    x="250" y="250"
+                    fill="#0d9488" fontSize="16" fontWeight="bold"
+                    textAnchor="middle" fontFamily="monospace"
+                    animate={{ opacity: [0.6, 1, 0.6] }}
+                    transition={{ duration: 2, repeat: Infinity }}
+                  >
+                    ⚙️ WELDING ZONES
+                  </motion.text>
+                </motion.g>
               </svg>
             </div>
 

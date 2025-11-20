@@ -51,13 +51,15 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-12 mb-8">
           {/* About Section */}
           <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-red-600 flex items-center justify-center">
-                <span className="text-white font-bold text-xl">SF</span>
-              </div>
+            <div className="flex items-center space-x-3 mb-4">
+              <img 
+                src="/images/steelflow-logo1.svg" 
+                alt="SteelFlow Systems" 
+                className="h-12 w-auto opacity-90"
+              />
               <div>
-                <span className="text-white font-bold text-xl">
-                  <span className="text-red-600">Steel</span>Flow
+                <span className="text-white font-semibold text-xl tracking-tight">
+                  <span className="text-teal-400">Steel</span>Flow
                 </span>
                 <p className="text-gray-400 text-xs">Systems</p>
               </div>
@@ -74,7 +76,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="text-gray-400 hover:text-red-600 transition-colors duration-200"
+                    className="text-gray-400 hover:text-teal-400 transition-colors duration-200"
                   >
                     {link.label}
                   </a>
@@ -162,7 +164,7 @@ export default function Footer() {
                 <a
                   key={social.name}
                   href={social.href}
-                  className="text-gray-400 hover:text-red-600 transition-colors duration-200"
+                  className="text-gray-400 hover:text-teal-400 transition-colors duration-200"
                   aria-label={social.name}
                 >
                   {social.icon}

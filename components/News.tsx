@@ -64,16 +64,16 @@ export default function News() {
           variants={containerVariants}
         >
           {/* Section Header */}
-          <div className="text-center mb-16 md:mb-24">
+          <div className="mb-16 md:mb-24">
             <motion.h2
               variants={itemVariants}
-              className="text-5xl md:text-7xl lg:text-8xl font-semibold mb-6 tracking-tight leading-tight text-gray-900 dark:text-white"
+              className="text-5xl md:text-6xl lg:text-7xl font-semibold mb-6 tracking-tight leading-tight text-gray-900 dark:text-white"
             >
               {t('title')}
             </motion.h2>
             <motion.p
               variants={itemVariants}
-              className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 font-light tracking-tight max-w-3xl mx-auto"
+              className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 font-light tracking-tight max-w-3xl"
             >
               {t('subtitle')}
             </motion.p>

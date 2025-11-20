@@ -53,7 +53,7 @@ export default function Contact() {
         </svg>
       ),
       title: t('email'),
-      content: 'kontakt@steelflow.pl\nbiuro@steelflow.pl',
+      content: 'szymon@steelflow.pl\nbiuro@steelflow.pl',
     },
   ];
 
@@ -66,7 +66,7 @@ export default function Contact() {
           transition={{ duration: 0.6 }}
           className="mb-24"
         >
-          <h2 className="text-5xl md:text-7xl lg:text-8xl font-semibold text-gray-900 dark:text-white mb-8 tracking-tight">
+          <h2 className="text-5xl md:text-6xl lg:text-7xl font-semibold text-gray-900 dark:text-white mb-8 tracking-tight">
             {t('title')}
           </h2>
           <p className="text-2xl md:text-3xl text-gray-600 dark:text-gray-400 font-light leading-relaxed max-w-3xl">{t('subtitle')}</p>

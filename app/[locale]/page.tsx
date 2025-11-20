@@ -28,7 +28,7 @@ export default function HomePage() {
     return <LoadingScreen />;
   }
 
-  return (
+  return (  
     <main className="min-h-screen">
       <Navigation />
       <Hero />
