@@ -1,13 +1,13 @@
-import { notFound } from 'next/navigation';
-import { routing } from '@/i18n/routing';
-import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
-import type { Metadata } from 'next';
+import { notFound } from "next/navigation";
+import { routing } from "@/i18n/routing";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
+import type { Metadata } from "next";
 import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
-  title: 'SteelFlow Systems',
-  description: 'Profesjonalne spawanie i konstrukcje stalowe',
+  title: "SteelFlow Systems",
+  description: "Profesjonalne spawanie i konstrukcje stalowe",
 };
 
 export function generateStaticParams() {
@@ -35,11 +35,27 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"
         />
+        <title>SteelFlow Systems – Nowoczesne systemy stalowe</title>
+        <meta
+          name="description"
+          content="SteelFlow Systems – Profesjonalne spawanie i konstrukcje stalowe"
+        />
+        <meta property="og:title" content="SteelFlow Systems" />
+        <meta
+          property="og:description"
+          content="Nowoczesne rozwiązania w spawaniu i konstrukcjach stalowych."
+        />
+        <meta property="og:image" content="/og-image.png" />
+        <meta property="og:url" content="https://steelflow.pl" />
       </head>
       <body>
         <NextIntlClientProvider messages={messages}>
