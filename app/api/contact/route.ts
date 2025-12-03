@@ -16,10 +16,10 @@ export async function POST(req: NextRequest) {
     });
 
     const recipients = [
-      process.env.CONTACT_TO_1,
-      process.env.CONTACT_TO_2,
-      process.env.CONTACT_TO_3,
-    ].filter(Boolean);
+      "biuro@steelflow.pl",
+      "szymon@steelflow.pl",
+      "andrzej@steelflow.pl",
+    ];
 
     await transporter.sendMail({
       from: `"Formularz Kontaktowy" <${process.env.SMTP_USER}>`,
@@ -36,6 +36,9 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ ok: true });
   } catch (error: any) {
     console.error("Mail error:", error);
-    return NextResponse.json({ ok: false, error: error.message }, { status: 500 });
+    return NextResponse.json(
+      { ok: false, error: error.message },
+      { status: 500 }
+    );
   }
 }

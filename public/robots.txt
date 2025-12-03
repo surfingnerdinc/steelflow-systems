@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://steelflow.pl
+
+# Sitemaps
+Sitemap: https://steelflow.pl/sitemap.xml
