@@ -75,10 +75,6 @@ export default function Navigation() {
     { code: 'pl', label: 'Polski', flag: '🇵🇱' },
     { code: 'en', label: 'English', flag: '🇬🇧' },
     { code: 'de', label: 'Deutsch', flag: '🇩🇪' },
-    // Przykłady dodatkowych języków:
-    // { code: 'fr', label: 'Français', flag: '🇫🇷' },
-    // { code: 'es', label: 'Español', flag: '🇪🇸' },
-    // { code: 'it', label: 'Italiano', flag: '🇮🇹' },
   ];
 
   const currentLanguage = languages.find(lang => lang.code === locale) || languages[0];
@@ -88,14 +84,27 @@ export default function Navigation() {
     setIsLangDropdownOpen(false);
   };
 
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string, isMobile: boolean = false) => {
     // Check if we're on homepage and link is a hash anchor
     if (pathname === '/' && href.startsWith('/#')) {
       e.preventDefault();
       const sectionId = href.replace('/#', '');
-      const element = document.getElementById(sectionId);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+      
+      if (isMobile) {
+        // Close menu first, then scroll with delay
+        setIsMobileMenuOpen(false);
+        setTimeout(() => {
+          const element = document.getElementById(sectionId);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 300); // Wait for menu close animation
+      } else {
+        // Desktop - scroll immediately
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
       }
     }
     // If not on homepage, let the link navigate normally (with page reload)
@@ -254,7 +263,7 @@ export default function Navigation() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden text-white p-2"
+            className="md:hidden dark:text-white p-2 text-black"
           >
             <svg
               className="w-6 h-6"
@@ -300,8 +309,7 @@ export default function Navigation() {
                       key={link.href}
                       href={link.href}
                       onClick={(e) => {
-                        handleNavClick(e, link.href);
-                        setIsMobileMenuOpen(false);
+                        handleNavClick(e, link.href, true); // Pass true for mobile
                       }}
                       className="block text-gray-700 dark:text-gray-300 hover:text-teal-600 dark:hover:text-teal-500 transition-colors duration-200 py-2 text-lg font-medium"
                     >

@@ -3,6 +3,7 @@ import { routing } from '@/i18n/routing';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import type { Metadata } from 'next';
+import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
   title: 'SteelFlow Systems',
@@ -42,6 +43,7 @@ export default async function LocaleLayout({
       </head>
       <body>
         <NextIntlClientProvider messages={messages}>
+          <Toaster position="top-right" />
           {children}
         </NextIntlClientProvider>
       </body>

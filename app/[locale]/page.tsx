@@ -16,7 +16,6 @@ export default function HomePage() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Symulacja ładowania - w przyszłości można tutaj ładować zasoby
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 2500);
