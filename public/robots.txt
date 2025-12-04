@@ -1,9 +1,35 @@
-# *
 User-agent: *
 Allow: /
 
-# Host
+# Specific rules for search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Block access to admin areas and internal files
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /node_modules/
+
+# Allow images and assets
+Allow: /images/
+Allow: /icons/
+Allow: /*.css
+Allow: /*.js
+Allow: /*.svg
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.webp
+
+# Host (change to your actual domain)
 Host: https://steelflow.pl
 
-# Sitemaps
+# Sitemap location
 Sitemap: https://steelflow.pl/sitemap.xml
+
+# Crawl delay (optional - good for server performance)
+Crawl-delay: 1
