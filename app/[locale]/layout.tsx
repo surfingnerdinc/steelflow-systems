@@ -34,6 +34,11 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <head>
+        {/* Favicon */}
+        <link rel="icon" type="image/svg+xml" href="/images/steelflow-logo1.svg" />
+        <link rel="apple-touch-icon" href="/images/steelflow-logo1.svg" />
+        
+        {/* Fonts */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -44,18 +49,30 @@ export default async function LocaleLayout({
           href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"
         />
+        
+        {/* SEO Meta Tags */}
         <title>SteelFlow Systems – Nowoczesne systemy stalowe</title>
         <meta
           name="description"
           content="SteelFlow Systems – Profesjonalne spawanie i konstrukcje stalowe"
         />
-        <meta property="og:title" content="SteelFlow Systems" />
+        <meta name="keywords" content="spawanie, konstrukcje stalowe, stal, welding, metalworking" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="SteelFlow Systems – Profesjonalne spawanie" />
         <meta
           property="og:description"
           content="Nowoczesne rozwiązania w spawaniu i konstrukcjach stalowych."
         />
-        <meta property="og:image" content="/og-image.png" />
+        <meta property="og:image" content="https://steelflow.pl/images/steelflow-logo1.svg" />
         <meta property="og:url" content="https://steelflow.pl" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="SteelFlow Systems" />
+        <meta name="twitter:description" content="Profesjonalne spawanie i konstrukcje stalowe" />
+        <meta name="twitter:image" content="https://steelflow.pl/images/steelflow-logo1.svg" />
       </head>
       <body>
         <NextIntlClientProvider messages={messages}>
