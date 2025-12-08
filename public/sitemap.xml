@@ -1,3 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-</sitemapindex>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Homepage - Polski (główny) -->
+  <url>
+    <loc>https://steelflow.pl/pl</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://steelflow.pl/en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://steelflow.pl/de"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://steelflow.pl/pl"/>
+  </url>
+  
+  <!-- Homepage - English -->
+  <url>
+    <loc>https://steelflow.pl/en</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://steelflow.pl/en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://steelflow.pl/de"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://steelflow.pl/pl"/>
+  </url>
+  
+  <!-- Homepage - Deutsch -->
+  <url>
+    <loc>https://steelflow.pl/de</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://steelflow.pl/en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://steelflow.pl/de"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://steelflow.pl/pl"/>
+  </url>
+  
+  <!-- O Firmie / About Us / Über uns -->
+  <url>
+    <loc>https://steelflow.pl/pl/o-firmie</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://steelflow.pl/en/o-firmie"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://steelflow.pl/de/o-firmie"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://steelflow.pl/pl/o-firmie"/>
+  </url>
+  
+  <url>
+    <loc>https://steelflow.pl/en/o-firmie</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://steelflow.pl/en/o-firmie"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://steelflow.pl/de/o-firmie"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://steelflow.pl/pl/o-firmie"/>
+  </url>
+  
+  <url>
+    <loc>https://steelflow.pl/de/o-firmie</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://steelflow.pl/en/o-firmie"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://steelflow.pl/de/o-firmie"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://steelflow.pl/pl/o-firmie"/>
+  </url>
+  
+  <!-- Realizacje / Projects / Projekte -->
+  <url>
+    <loc>https://steelflow.pl/pl/realizacje</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://steelflow.pl/en/realizacje"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://steelflow.pl/de/realizacje"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://steelflow.pl/pl/realizacje"/>
+  </url>
+  
+  <url>
+    <loc>https://steelflow.pl/en/realizacje</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://steelflow.pl/en/realizacje"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://steelflow.pl/de/realizacje"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://steelflow.pl/pl/realizacje"/>
+  </url>
+  
+  <url>
+    <loc>https://steelflow.pl/de/realizacje</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://steelflow.pl/en/realizacje"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://steelflow.pl/de/realizacje"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://steelflow.pl/pl/realizacje"/>
+  </url>
+  
+  <!-- Aktualności / News / Nachrichten -->
+  <url>
+    <loc>https://steelflow.pl/pl/aktualnosci</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://steelflow.pl/en/aktualnosci"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://steelflow.pl/de/aktualnosci"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://steelflow.pl/pl/aktualnosci"/>
+  </url>
+  
+  <url>
+    <loc>https://steelflow.pl/en/aktualnosci</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://steelflow.pl/en/aktualnosci"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://steelflow.pl/de/aktualnosci"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://steelflow.pl/pl/aktualnosci"/>
+  </url>
+  
+  <url>
+    <loc>https://steelflow.pl/de/aktualnosci</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://steelflow.pl/en/aktualnosci"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://steelflow.pl/de/aktualnosci"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://steelflow.pl/pl/aktualnosci"/>
+  </url>
+</urlset>
