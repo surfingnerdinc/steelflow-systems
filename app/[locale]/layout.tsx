@@ -8,6 +8,10 @@ import { Toaster } from "react-hot-toast";
 export const metadata: Metadata = {
   title: "SteelFlow Systems",
   description: "Profesjonalne spawanie i konstrukcje stalowe",
+  icons: {
+    icon: "/images/steelflow-logo2.png",
+    apple: "/images/steelflow-logo2.png",
+  }
 };
 
 export function generateStaticParams() {
@@ -35,8 +39,8 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <head>
         {/* Favicon */}
-        <link rel="icon" type="image/svg+xml" href="/images/steelflow-logo1.svg" />
-        <link rel="apple-touch-icon" href="/images/steelflow-logo1.svg" />
+        <link rel="icon" type="image/png" href="/images/steelflow-logo2.png" />
+        <link rel="apple-touch-icon" href="/images/steelflow-logo2.png" />
         
         {/* Fonts */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
