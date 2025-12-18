@@ -5,14 +5,65 @@ import { getMessages } from "next-intl/server";
 import type { Metadata } from "next";
 import { Toaster } from "react-hot-toast";
 
-export const metadata: Metadata = {
-  title: "SteelFlow Systems",
-  description: "Profesjonalne spawanie i konstrukcje stalowe",
-  icons: {
-    icon: "/images/steelflow-logo2.png",
-    apple: "/images/steelflow-logo2.png",
-  }
-};
+const baseUrl = "https://steelflow.pl";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  
+  return {
+    metadataBase: new URL(baseUrl),
+    title: "SteelFlow Systems",
+    description: "Profesjonalne spawanie i konstrukcje stalowe",
+    icons: {
+      icon: "/images/steelflow-logo2.png",
+      apple: "/images/steelflow-logo2.png",
+    },
+    alternates: {
+      canonical: `/${locale}`,
+      languages: {
+        'pl': '/pl',
+        'en': '/en',
+        'de': '/de',
+      },
+    },
+    openGraph: {
+      title: "SteelFlow Systems – Profesjonalne spawanie",
+      description: "Nowoczesne rozwiązania w spawaniu i konstrukcjach stalowych.",
+      url: baseUrl,
+      siteName: "SteelFlow Systems",
+      images: [
+        {
+          url: "/images/steelflow-logo1.svg",
+          width: 1200,
+          height: 630,
+        },
+      ],
+      locale: locale,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "SteelFlow Systems",
+      description: "Profesjonalne spawanie i konstrukcje stalowe",
+      images: ["/images/steelflow-logo1.svg"],
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
+  };
+}
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -38,10 +89,6 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <head>
-        {/* Favicon */}
-        <link rel="icon" type="image/png" href="/images/steelflow-logo2.png" />
-        <link rel="apple-touch-icon" href="/images/steelflow-logo2.png" />
-        
         {/* Fonts */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
@@ -53,30 +100,7 @@ export default async function LocaleLayout({
           href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"
         />
-        
-        {/* SEO Meta Tags */}
-        <title>SteelFlow Systems – Nowoczesne systemy stalowe</title>
-        <meta
-          name="description"
-          content="SteelFlow Systems – Profesjonalne spawanie i konstrukcje stalowe"
-        />
-        <meta name="keywords" content="spawanie, konstrukcje stalowe, stal, welding, metalworking" />
-        
-        {/* Open Graph / Facebook */}
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="SteelFlow Systems – Profesjonalne spawanie" />
-        <meta
-          property="og:description"
-          content="Nowoczesne rozwiązania w spawaniu i konstrukcjach stalowych."
-        />
-        <meta property="og:image" content="https://steelflow.pl/images/steelflow-logo1.svg" />
-        <meta property="og:url" content="https://steelflow.pl" />
-        
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="SteelFlow Systems" />
-        <meta name="twitter:description" content="Profesjonalne spawanie i konstrukcje stalowe" />
-        <meta name="twitter:image" content="https://steelflow.pl/images/steelflow-logo1.svg" />
+        <meta name="keywords" content="spawanie, konstrukcje stalowe, stal, welding, metalworking, SteelFlow" />
       </head>
       <body>
         <NextIntlClientProvider messages={messages}>

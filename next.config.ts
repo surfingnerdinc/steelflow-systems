@@ -12,6 +12,10 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  // Ensure trailing slashes are handled consistently
+  trailingSlash: false,
+  // Skip trailing slash redirect for better SEO
+  skipTrailingSlashRedirect: false,
 };
 
 export default withNextIntl(nextConfig);

@@ -10,5 +10,6 @@ export const config = {
   // - /_next (Next.js internals)
   // - /_vercel (Vercel internals)
   // - /images, /favicon.ico, etc. (static files)
-  matcher: ['/((?!api|_next|_vercel|.*\\..*).*)'],
+  // - /robots.txt, /sitemap.xml (SEO files)
+  matcher: ['/((?!api|_next|_vercel|robots.txt|sitemap.xml|.*\\..*).*)'],
 };
